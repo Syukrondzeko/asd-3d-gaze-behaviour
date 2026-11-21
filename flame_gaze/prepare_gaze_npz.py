@@ -5,11 +5,11 @@ Reads gaze_x, gaze_y, gaze_z from the CSV (already unit vectors),
 stores them as a 'gaze' key in the npz for use by the render script.
 
 Usage:
-  docker exec muhamad_multipar conda run -n diffposetalkprod python \\
-    /home/muhamadsy/gaze3d/temp_code/prepare_gaze_npz.py \\
-    --input  /home/muhamadsy/gaze3d/sample_input/000_speaker.npz \\
-    --csv    /home/muhamadsy/gaze3d/output/000_speaker_image_predicted_gaze.csv \\
-    --output /home/muhamadsy/gaze3d/sample_input/000_speaker_with_gaze.npz
+  python \\
+    flame_gaze/prepare_gaze_npz.py \\
+    --input  sample_input/000_speaker.npz \\
+    --csv    output/000_speaker_image_predicted_gaze.csv \\
+    --output sample_input/000_speaker_with_gaze.npz
 """
 
 import argparse

@@ -22,10 +22,10 @@ eye_pose is stored separately as an extra key (useful for gaze rendering):
   eye_pose: (1, N,   6)  float32
 
 Usage:
-  docker exec muhamad_multipar conda run -n diffposetalkprod python \
-    /home/muhamadsy/gaze3d/temp_code/raw_flame_to_npz.py \
-    --input  /home/muhamadsy/gaze3d/sample_flame/train/sample_flame/Person_0/000/EMOCA_v2_lr_mse_20 \
-    --output /home/muhamadsy/gaze3d/sample_input/000_listener.npz
+  python \
+    flame_gaze/raw_flame_to_npz.py \
+    --input  sample_flame/train/sample_flame/Person_0/000/EMOCA_v2_lr_mse_20 \
+    --output sample_input/000_listener.npz
 """
 
 import argparse
