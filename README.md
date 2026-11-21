@@ -1,4 +1,4 @@
-# asd-behaviour
+# asd-3d-gaze-behaviour
 
 Tools for estimating **3D gaze** from video and attaching it to **FLAME / EMOCA face parameters**, so a person's head, expression and eye direction can be analysed and re-rendered together.
 
@@ -50,8 +50,8 @@ python flame_gaze/render_npz_to_video_with_eyeball.py --input sample_input/perso
 ## Setup
 
 ```bash
-git clone https://github.com/Syukrondzeko/asd-behaviour.git
-cd asd-behaviour
+git clone https://github.com/Syukrondzeko/asd-3d-gaze-behaviour.git
+cd asd-3d-gaze-behaviour
 conda env create -f environment.yaml    # Python 3.10, PyTorch 2.1.1, CUDA 12.1
 conda activate gazeCVPR
 bash setup.sh                           # downloads the head-detector weights into weights/
